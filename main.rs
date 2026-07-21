@@ -1,7 +1,7 @@
 fn main() {
     let mut ram: [u8; 4096] = [0; 4096];
     let mut reg: [i32; 4] = [0b00, 0b00, 0b00, 0b00];
-    let mut ports: [i32; 256] = [0b00; 256];
+    let mut ports: [i32; 16] = [0b00; 256];
 
     execute_line("0000101100000101".to_string(), &mut ram, &mut reg, &mut ports);
     execute_line("0000000100000001".to_string(), &mut ram, &mut reg, &mut ports);
@@ -13,7 +13,7 @@ fn main() {
 }
 
 
-fn execute_line(line: String, _ram: &mut [u8; 4096], reg: &mut [i32; 4], ports: &mut [i32; 256]) {
+fn execute_line(line: String, _ram: &mut [u8; 4096], reg: &mut [i32; 4], ports: &mut [i32; 16]) {
     let (operation, operand) = line.split_at(8);
     let (op1, op2) = operand.split_at(4);
 
