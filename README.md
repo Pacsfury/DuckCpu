@@ -2,7 +2,17 @@
 
 A basic and lightweight CPU emulator written in Rust that implements the P16b architecture.
 
+**Work in progress**
+
 ---
+
+## Why DuckCpu
+
+DuckCpu's name comes from the Debugger Rubber Duck, popularized by the book The Pragmatic Programmer.
+
+The duck debugging is telling to the duck what every line of code does, so we realize where's the bug easily.
+
+The duck's message is that we all do stupid errors, and has been a symbol for programmers aroud the world.
 
 ## Technical Specifications (Specs)
 
